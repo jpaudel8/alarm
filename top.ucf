@@ -1,0 +1,29 @@
+NET "rstin" LOC = G18;
+
+NET "CLKIN" LOC = B8;
+
+#Created by Constraints Editor (xc3s500e-fg320-4) - 2016/10/10
+NET "clkin" TNM_NET = "clkin";
+TIMESPEC TS_clkin = PERIOD "clkin" 20 ns HIGH 50 %;
+
+# PlanAhead Generated physical constraints 
+
+NET "alarm_out" LOC = R4;
+NET "armed_led_out" LOC = E17;
+NET "disarmed_led_out" LOC = J14;
+
+
+
+# PlanAhead Generated physical constraints 
+
+NET "sensor" LOC = R17;
+NET "led_out[0]" LOC = K14;
+NET "led_out[1]" LOC = K15;
+NET "led_out[2]" LOC = J15;
+NET "keysin[3]" LOC = H13;
+NET "keysin[2]" LOC = E18;
+
+# PlanAhead Generated physical constraints 
+
+NET "keysin[1]" LOC = D18;
+NET "keysin[0]" LOC = B18;

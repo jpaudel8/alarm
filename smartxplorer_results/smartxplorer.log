@@ -1,0 +1,50 @@
+
+Release 14.5 SmartXplorer
+Copyright(c) 1995-2010 Xilinx, Inc. All rights reserved.
+"C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\smartxplorer.exe" -p xc3s500e-fg320-4 -b -wd smartxplorer_results top.ngd -to "-v 3 -s 4 -n 3 -fastpaths -xml top.twx -ucf top.ucf" -host_list hostlistfile.txt -max_runs 7
+
+SmartXplorer Settings: 
+
+designName=C:\Users\Jagannath Paudel\Documents\fpga\alarm\top.ngd 
+write_dir=C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results 
+host_list=C:\Users\Jagannath Paudel\Documents\fpga\alarm\hostlistfile.txt 
+part=xc3s500e-fg320-4 
+strategy_file=None 
+notify=None 
+source_dir=C:\Users\Jagannath Paudel\Documents\fpga\alarm 
+batch_mode=True 
+run_all_strategies=False 
+list_all_strategies=False 
+remote_command=rsh
+area_report="lut;slice_reg"
+power_options=off
+trce_options="-v 3 -s 4 -n 3 -fastpaths -xml top.twx -ucf top.ucf"
+max_runs=7
+
+Starting SmartXplorer...
+See file 'smartxplorer.html' for real-time report.
+
+
+Running SmartXplorer strategies...
+
+
+
+INFO: Timing Met... Stopping remaining jobs
+######################################################################
+ BestStrategy : MapTimingExtraEffort
+######################################################################
+ Run index                           : run1
+ Map options                         : -timing -ol high -xe n 
+ Par options                         : -ol high 
+ Number of Luts                      : 26 (1%)
+ Number of Slice Registers           : 27 (1%)
+ Achieved Timing Score               : 0
+ Worst Case Slack                : 2.735ns
+
+######################################################################
+
+Total Real Time:102.4(secs)
+SmartXplorer Done
+
+
+SmartXplorer Done. See file 'smartxplorer.txt' for detailed report.

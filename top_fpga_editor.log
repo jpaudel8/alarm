@@ -1,0 +1,31 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.58f
+#Current Working Directory:
+#:D   C:\Users\Jagannath Paudel\Documents\fpga\alarm
+#Date/Time:
+#:T   Mon Oct 10 21:18:23 2016
+#------------------------------
+	#Reading top.ncd...
+	#Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+	#   "top" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+	#Design creation date: 2016.10.10.08.01.24
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+unselect -all
+	#4
+select site 'SLICE_X30Y46'
+	#site "SLICE_X30Y46",  type = SLICEM  (RPM grid X65Y48)
+	#5
+unselect -all
+	#6
+select site 'SLICE_X30Y46'
+	#site "SLICE_X30Y46",  type = SLICEM  (RPM grid X65Y48)
+	#7
+post block

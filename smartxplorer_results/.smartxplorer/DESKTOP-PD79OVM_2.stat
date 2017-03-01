@@ -1,0 +1,15 @@
+START:Strategy:3:ParHighEffort1
+REMOTE_PID:764
+RUNNING:764:8760:ParHighEffort1:map:top.ngd: -cm area  -p xc3s500e-fg320-4 -o top_map.ncd  C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun3:bsltop.pcf
+STATUS:ParHighEffort1:map:Score:None:lut:None:slice_reg:27 (1%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:10.32 secs 
+STATUS:ParHighEffort1:map:Score:None:lut:26 (1%):slice_reg:27 (1%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:10.32 secs 
+STATUS:ParHighEffort1:map:Score:None:lut:26 (1%):slice_reg:27 (1%):slice:26 (1%):bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:10.32 secs 
+DONE:map:0
+RUNNING:764:9008:ParHighEffort1:par:top_map.ncd: -ol high  -w top.ncd  C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun3:bsltop.pcf
+STATUS:ParHighEffort1:par:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:40.47 secs 
+STATUS:ParHighEffort1:par:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:3.225ns:Time:45.47 secs 
+DONE:par:0
+RUNNING:764:12404:ParHighEffort1:trce:C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run3\top.ncd:C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun3:bsltop.pcf -xml C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun3:bsltop.twx -v 3 -s 4 -n 3 -fastpaths   -ucf top.ucf -o C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun3:bsltop.twr
+STATUS:ParHighEffort1:trce:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:55.52 secs 
+DONE:trce:0
+DONE:Xplorer

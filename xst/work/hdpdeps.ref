@@ -1,0 +1,22 @@
+V3 15
+FL "C:/Users/Jagannath Paudel/Documents/fpga/alarm/code.vhd" 2016/11/06.21:15:08 P.58f
+EN work/code 1481818054 \
+      FL "C:/Users/Jagannath Paudel/Documents/fpga/alarm/code.vhd" \
+      PB ieee/std_logic_1164 1364358218
+AR work/code/Behavioral 1481818055 \
+      FL "C:/Users/Jagannath Paudel/Documents/fpga/alarm/code.vhd" EN work/code 1481818054
+FL "C:/Users/Jagannath Paudel/Documents/fpga/alarm/myclock.vhd" 2016/10/10.13:26:35 P.58f
+EN work/myclock 1481818052 \
+      FL "C:/Users/Jagannath Paudel/Documents/fpga/alarm/myclock.vhd" \
+      PB ieee/std_logic_1164 1364358218 PB ieee/NUMERIC_STD 1364358223 LB UNISIM \
+      PH unisim/VCOMPONENTS 1364358225
+AR work/myclock/BEHAVIORAL 1481818053 \
+      FL "C:/Users/Jagannath Paudel/Documents/fpga/alarm/myclock.vhd" \
+      EN work/myclock 1481818052 CP IBUFG CP BUFG CP DCM_SP
+FL "C:/Users/Jagannath Paudel/Documents/fpga/alarm/top.vhd" 2016/10/10.08:33:23 P.58f
+EN work/top 1481818056 \
+      FL "C:/Users/Jagannath Paudel/Documents/fpga/alarm/top.vhd" \
+      PB ieee/std_logic_1164 1364358218
+AR work/top/Behavioral 1481818057 \
+      FL "C:/Users/Jagannath Paudel/Documents/fpga/alarm/top.vhd" EN work/top 1481818056 \
+      CP myclock CP code

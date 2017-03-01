@@ -1,0 +1,157 @@
+#:C69    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.58f
+#Current Working Directory:
+#:D   C:\Users\Jagannath Paudel\Documents\fpga\alarm
+#Date/Time:
+#:T   Sat Oct 01 20:47:40 2016
+#------------------------------
+	#Reading code_map.ncd...
+	#Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\14.5\ISE_DS\ISE\.
+	#   "code" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+	#Design creation date: 2016.10.01.15.02.33
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k net 'armed_led4'
+	#3
+select -k net 'armed_led12/O'
+	#4
+select -k net 'armed_led_out_OBUF'
+	#5
+select -k net 'clk_BUFGP'
+	#6
+select -k net 'clk_BUFGP/IBUFG'
+	#7
+select -k net 'disarmed_led_out_OBUF'
+	#8
+select -k net 'GLOBAL_LOGIC1'
+	#9
+select -k net 'keys_0_IBUF'
+	#10
+select -k net 'keys_1_IBUF'
+	#11
+select -k net 'keys_2_IBUF'
+	#12
+select -k net 'keys_3_IBUF'
+	#13
+select -k net 'led_out_0'
+	#14
+select -k net 'led_out_1'
+	#15
+select -k net 'led_out_2'
+	#16
+select -k net 'N3'
+	#17
+select -k net 'rst_IBUF'
+	#18
+select -k net 'state_cmp_eq0000'
+	#19
+select -k net 'state_cmp_eq0001'
+	#20
+select -k net 'state_cmp_eq0002'
+	#21
+select -k net 'state_FSM_FFd1'
+	#22
+select -k net 'state_FSM_FFd2'
+	#23
+select -k net 'state_FSM_FFd2-In_SW0/O'
+	#24
+select -k net 'state_FSM_FFd3'
+	#25
+select -k net 'state_FSM_FFd4'
+	#26
+select -k net 'state_FSM_FFd4-In_SW0/O'
+	#27
+select -k net 'state_FSM_FFd5'
+	#28
+select -k net 'state_FSM_FFd6'
+	#29
+select -k net 'state_FSM_FFd7'
+	#30
+select -k net 'state_FSM_FFd8'
+	#31
+select -k net 'state_FSM_FFd8-In_SW0/O'
+	#32
+unselect net 'armed_led4'
+	#33
+unselect net 'armed_led12/O'
+	#34
+unselect net 'armed_led_out_OBUF'
+	#35
+unselect net 'clk_BUFGP'
+	#36
+unselect net 'clk_BUFGP/IBUFG'
+	#37
+unselect net 'disarmed_led_out_OBUF'
+	#38
+unselect net 'GLOBAL_LOGIC1'
+	#39
+unselect net 'keys_0_IBUF'
+	#40
+unselect net 'keys_1_IBUF'
+	#41
+unselect net 'keys_2_IBUF'
+	#42
+unselect net 'keys_3_IBUF'
+	#43
+unselect net 'led_out_0'
+	#44
+unselect net 'led_out_1'
+	#45
+unselect net 'led_out_2'
+	#46
+unselect net 'N3'
+	#47
+unselect net 'rst_IBUF'
+	#48
+unselect net 'state_cmp_eq0000'
+	#49
+unselect net 'state_cmp_eq0001'
+	#50
+unselect net 'state_cmp_eq0002'
+	#51
+unselect net 'state_FSM_FFd1'
+	#52
+unselect net 'state_FSM_FFd2-In_SW0/O'
+	#53
+unselect net 'state_FSM_FFd3'
+	#54
+unselect net 'state_FSM_FFd4'
+	#55
+unselect net 'state_FSM_FFd4-In_SW0/O'
+	#56
+unselect net 'state_FSM_FFd5'
+	#57
+unselect net 'state_FSM_FFd6'
+	#58
+unselect net 'state_FSM_FFd7'
+	#59
+unselect net 'state_FSM_FFd8'
+	#60
+unselect net 'state_FSM_FFd8-In_SW0/O'
+	#61
+unselect net 'state_FSM_FFd2'
+	#62
+select -k net 'state_FSM_FFd1'
+	#63
+unselect -all
+	#64
+select -k net 'state_FSM_FFd1'
+	#65
+unselect -all
+	#66
+select site 'SLICE_X39Y44'
+	#site "SLICE_X39Y44",  type = SLICEL  (RPM grid X83Y46)
+	#67
+unselect -all
+	#68
+select site 'SLICE_X39Y44'
+	#site "SLICE_X39Y44",  type = SLICEL  (RPM grid X83Y46)
+	#69
+post block
+	#70
+unselect -all

@@ -1,0 +1,7 @@
+
+WARNING: The Trce option "-ucf" is either illegal or not supported by projNav and hence will not be added in the strategy file(parhigheffort2.xds) created by Smartxplorer.
+
+Command Line : 
+-------------
+map C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run4\top.ngd -cm area -t 2 -p xc3s500e-fg320-4 -o top_map.ncd C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run4\top.pcf
+

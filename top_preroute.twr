@@ -1,0 +1,560 @@
+--------------------------------------------------------------------------------
+Release 14.5 Trace  (nt)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml top_preroute.twx top_map.ncd -o top_preroute.twr top.pcf -ucf
+top.ucf
+
+Design file:              top_map.ncd
+Physical constraint file: top.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2013-03-26)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: TS_clkin = PERIOD TIMEGRP "clkin" 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   6.000ns.
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clkin = PERIOD TIMEGRP "clkin" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 6.786ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 3.214ns (311.139MHz) (Tdcmpco)
+  Physical resource: Inst_myclock/DCM_SP_INST/CLK2X
+  Logical resource: Inst_myclock/DCM_SP_INST/CLK2X
+  Location pin: DCM.CLK2X
+  Clock network: Inst_myclock/CLK2X_BUF
+--------------------------------------------------------------------------------
+Slack: 14.000ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: Inst_myclock/DCM_SP_INST/CLKIN
+  Logical resource: Inst_myclock/DCM_SP_INST/CLKIN
+  Location pin: DCM.CLKIN
+  Clock network: Inst_myclock/CLKIN_IBUFG
+--------------------------------------------------------------------------------
+Slack: 14.000ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 3.000ns (Tdcmpw_CLKIN_50_100)
+  Physical resource: Inst_myclock/DCM_SP_INST/CLKIN
+  Logical resource: Inst_myclock/DCM_SP_INST/CLKIN
+  Location pin: DCM.CLKIN
+  Clock network: Inst_myclock/CLKIN_IBUFG
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_Inst_myclock_CLK2X_BUF = PERIOD TIMEGRP 
+"Inst_myclock_CLK2X_BUF" TS_clkin /         2 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 276 paths analyzed, 64 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   4.199ns.
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_code/state_FSM_FFd2 (SLICEL.BY), 14 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     5.801ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_code/Q3_1 (FF)
+  Destination:          Inst_code/state_FSM_FFd2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.199ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_code/Q3_1 to Inst_code/state_FSM_FFd2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   Inst_code/Q3<1>
+                                                       Inst_code/Q3_1
+    SLICEL.F1            net (fanout=1)     e  0.100   Inst_code/Q3<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd2
+                                                       Inst_code/keys<1>1
+    SLICEL.F3            net (fanout=5)     e  0.100   Inst_code/keys<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/N3
+                                                       Inst_code/state_cmp_eq000111
+    SLICEL.F4            net (fanout=3)     e  0.100   Inst_code/N3
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd1
+                                                       Inst_code/state_FSM_FFd2-In15
+    SLICEL.BY            net (fanout=1)     e  0.100   Inst_code/state_FSM_FFd2-In15
+    SLICEL.CLK           Tsrck                 1.096   Inst_code/state_FSM_FFd2
+                                                       Inst_code/state_FSM_FFd2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.199ns (3.799ns logic, 0.400ns route)
+                                                       (90.5% logic, 9.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.801ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_code/Q1_1 (FF)
+  Destination:          Inst_code/state_FSM_FFd2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.199ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_code/Q1_1 to Inst_code/state_FSM_FFd2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   Inst_code/Q1<1>
+                                                       Inst_code/Q1_1
+    SLICEL.F3            net (fanout=2)     e  0.100   Inst_code/Q1<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd2
+                                                       Inst_code/keys<1>1
+    SLICEL.F3            net (fanout=5)     e  0.100   Inst_code/keys<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/N3
+                                                       Inst_code/state_cmp_eq000111
+    SLICEL.F4            net (fanout=3)     e  0.100   Inst_code/N3
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd1
+                                                       Inst_code/state_FSM_FFd2-In15
+    SLICEL.BY            net (fanout=1)     e  0.100   Inst_code/state_FSM_FFd2-In15
+    SLICEL.CLK           Tsrck                 1.096   Inst_code/state_FSM_FFd2
+                                                       Inst_code/state_FSM_FFd2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.199ns (3.799ns logic, 0.400ns route)
+                                                       (90.5% logic, 9.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     5.801ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_code/Q2_1 (FF)
+  Destination:          Inst_code/state_FSM_FFd2 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      4.199ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_code/Q2_1 to Inst_code/state_FSM_FFd2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   Inst_code/Q2<1>
+                                                       Inst_code/Q2_1
+    SLICEL.F2            net (fanout=2)     e  0.100   Inst_code/Q2<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd2
+                                                       Inst_code/keys<1>1
+    SLICEL.F3            net (fanout=5)     e  0.100   Inst_code/keys<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/N3
+                                                       Inst_code/state_cmp_eq000111
+    SLICEL.F4            net (fanout=3)     e  0.100   Inst_code/N3
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd1
+                                                       Inst_code/state_FSM_FFd2-In15
+    SLICEL.BY            net (fanout=1)     e  0.100   Inst_code/state_FSM_FFd2-In15
+    SLICEL.CLK           Tsrck                 1.096   Inst_code/state_FSM_FFd2
+                                                       Inst_code/state_FSM_FFd2
+    -------------------------------------------------  ---------------------------
+    Total                                      4.199ns (3.799ns logic, 0.400ns route)
+                                                       (90.5% logic, 9.5% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_code/state_FSM_FFd9 (SLICEL.G4), 17 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.060ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_code/Q3_1 (FF)
+  Destination:          Inst_code/state_FSM_FFd9 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.940ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_code/Q3_1 to Inst_code/state_FSM_FFd9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   Inst_code/Q3<1>
+                                                       Inst_code/Q3_1
+    SLICEL.F1            net (fanout=1)     e  0.100   Inst_code/Q3<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd2
+                                                       Inst_code/keys<1>1
+    SLICEL.G3            net (fanout=5)     e  0.100   Inst_code/keys<1>
+    SLICEL.Y             Tilo                  0.704   Inst_code/state_FSM_FFd9-In4
+                                                       Inst_code/state_cmp_eq00021
+    SLICEL.F4            net (fanout=5)     e  0.100   Inst_code/state_cmp_eq0002
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd9-In4
+                                                       Inst_code/state_FSM_FFd9-In4
+    SLICEL.G4            net (fanout=1)     e  0.100   Inst_code/state_FSM_FFd9-In4
+    SLICEL.CLK           Tgck                  0.837   Inst_code/state_FSM_FFd9
+                                                       Inst_code/state_FSM_FFd9-In23
+                                                       Inst_code/state_FSM_FFd9
+    -------------------------------------------------  ---------------------------
+    Total                                      3.940ns (3.540ns logic, 0.400ns route)
+                                                       (89.8% logic, 10.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.060ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_code/Q1_1 (FF)
+  Destination:          Inst_code/state_FSM_FFd9 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.940ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_code/Q1_1 to Inst_code/state_FSM_FFd9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   Inst_code/Q1<1>
+                                                       Inst_code/Q1_1
+    SLICEL.F3            net (fanout=2)     e  0.100   Inst_code/Q1<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd2
+                                                       Inst_code/keys<1>1
+    SLICEL.G3            net (fanout=5)     e  0.100   Inst_code/keys<1>
+    SLICEL.Y             Tilo                  0.704   Inst_code/state_FSM_FFd9-In4
+                                                       Inst_code/state_cmp_eq00021
+    SLICEL.F4            net (fanout=5)     e  0.100   Inst_code/state_cmp_eq0002
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd9-In4
+                                                       Inst_code/state_FSM_FFd9-In4
+    SLICEL.G4            net (fanout=1)     e  0.100   Inst_code/state_FSM_FFd9-In4
+    SLICEL.CLK           Tgck                  0.837   Inst_code/state_FSM_FFd9
+                                                       Inst_code/state_FSM_FFd9-In23
+                                                       Inst_code/state_FSM_FFd9
+    -------------------------------------------------  ---------------------------
+    Total                                      3.940ns (3.540ns logic, 0.400ns route)
+                                                       (89.8% logic, 10.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.060ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_code/Q2_1 (FF)
+  Destination:          Inst_code/state_FSM_FFd9 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.940ns (Levels of Logic = 4)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_code/Q2_1 to Inst_code/state_FSM_FFd9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   Inst_code/Q2<1>
+                                                       Inst_code/Q2_1
+    SLICEL.F2            net (fanout=2)     e  0.100   Inst_code/Q2<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd2
+                                                       Inst_code/keys<1>1
+    SLICEL.G3            net (fanout=5)     e  0.100   Inst_code/keys<1>
+    SLICEL.Y             Tilo                  0.704   Inst_code/state_FSM_FFd9-In4
+                                                       Inst_code/state_cmp_eq00021
+    SLICEL.F4            net (fanout=5)     e  0.100   Inst_code/state_cmp_eq0002
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd9-In4
+                                                       Inst_code/state_FSM_FFd9-In4
+    SLICEL.G4            net (fanout=1)     e  0.100   Inst_code/state_FSM_FFd9-In4
+    SLICEL.CLK           Tgck                  0.837   Inst_code/state_FSM_FFd9
+                                                       Inst_code/state_FSM_FFd9-In23
+                                                       Inst_code/state_FSM_FFd9
+    -------------------------------------------------  ---------------------------
+    Total                                      3.940ns (3.540ns logic, 0.400ns route)
+                                                       (89.8% logic, 10.2% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_code/state_FSM_FFd5 (SLICEL.F1), 12 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     6.543ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_code/Q3_1 (FF)
+  Destination:          Inst_code/state_FSM_FFd5 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.457ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_code/Q3_1 to Inst_code/state_FSM_FFd5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   Inst_code/Q3<1>
+                                                       Inst_code/Q3_1
+    SLICEL.F1            net (fanout=1)     e  0.100   Inst_code/Q3<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd2
+                                                       Inst_code/keys<1>1
+    SLICEL.F3            net (fanout=5)     e  0.100   Inst_code/keys<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/state_cmp_eq0001
+                                                       Inst_code/state_cmp_eq00012
+    SLICEL.F1            net (fanout=8)     e  0.100   Inst_code/state_cmp_eq0001
+    SLICEL.CLK           Tfck                  1.158   Inst_code/state_FSM_FFd5
+                                                       Inst_code/state_FSM_FFd5-In11
+                                                       Inst_code/state_FSM_FFd5-In1_f5
+                                                       Inst_code/state_FSM_FFd5
+    -------------------------------------------------  ---------------------------
+    Total                                      3.457ns (3.157ns logic, 0.300ns route)
+                                                       (91.3% logic, 8.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.543ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_code/Q1_1 (FF)
+  Destination:          Inst_code/state_FSM_FFd5 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.457ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_code/Q1_1 to Inst_code/state_FSM_FFd5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   Inst_code/Q1<1>
+                                                       Inst_code/Q1_1
+    SLICEL.F3            net (fanout=2)     e  0.100   Inst_code/Q1<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd2
+                                                       Inst_code/keys<1>1
+    SLICEL.F3            net (fanout=5)     e  0.100   Inst_code/keys<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/state_cmp_eq0001
+                                                       Inst_code/state_cmp_eq00012
+    SLICEL.F1            net (fanout=8)     e  0.100   Inst_code/state_cmp_eq0001
+    SLICEL.CLK           Tfck                  1.158   Inst_code/state_FSM_FFd5
+                                                       Inst_code/state_FSM_FFd5-In11
+                                                       Inst_code/state_FSM_FFd5-In1_f5
+                                                       Inst_code/state_FSM_FFd5
+    -------------------------------------------------  ---------------------------
+    Total                                      3.457ns (3.157ns logic, 0.300ns route)
+                                                       (91.3% logic, 8.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     6.543ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               Inst_code/Q2_1 (FF)
+  Destination:          Inst_code/state_FSM_FFd5 (FF)
+  Requirement:          10.000ns
+  Data Path Delay:      3.457ns (Levels of Logic = 3)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 0.000ns
+  Destination Clock:    clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: Inst_code/Q2_1 to Inst_code/state_FSM_FFd5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.591   Inst_code/Q2<1>
+                                                       Inst_code/Q2_1
+    SLICEL.F2            net (fanout=2)     e  0.100   Inst_code/Q2<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/state_FSM_FFd2
+                                                       Inst_code/keys<1>1
+    SLICEL.F3            net (fanout=5)     e  0.100   Inst_code/keys<1>
+    SLICEL.X             Tilo                  0.704   Inst_code/state_cmp_eq0001
+                                                       Inst_code/state_cmp_eq00012
+    SLICEL.F1            net (fanout=8)     e  0.100   Inst_code/state_cmp_eq0001
+    SLICEL.CLK           Tfck                  1.158   Inst_code/state_FSM_FFd5
+                                                       Inst_code/state_FSM_FFd5-In11
+                                                       Inst_code/state_FSM_FFd5-In1_f5
+                                                       Inst_code/state_FSM_FFd5
+    -------------------------------------------------  ---------------------------
+    Total                                      3.457ns (3.157ns logic, 0.300ns route)
+                                                       (91.3% logic, 8.7% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_Inst_myclock_CLK2X_BUF = PERIOD TIMEGRP "Inst_myclock_CLK2X_BUF" TS_clkin /
+        2 HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_code/disarmed_led_out (SLICEL.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.663ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_code/state_FSM_FFd1 (FF)
+  Destination:          Inst_code/disarmed_led_out (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.663ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 10.000ns
+  Destination Clock:    clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_code/state_FSM_FFd1 to Inst_code/disarmed_led_out
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.YQ            Tcko                  0.470   Inst_code/state_FSM_FFd1
+                                                       Inst_code/state_FSM_FFd1
+    SLICEL.BX            net (fanout=6)     e  0.100   Inst_code/state_FSM_FFd1
+    SLICEL.CLK           Tckdi       (-Th)    -0.093   Inst_code/disarmed_led_out
+                                                       Inst_code/disarmed_led_out
+    -------------------------------------------------  ---------------------------
+    Total                                      0.663ns (0.563ns logic, 0.100ns route)
+                                                       (84.9% logic, 15.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_code/led_out_2 (SLICEL.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.663ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_code/state_FSM_FFd4 (FF)
+  Destination:          Inst_code/led_out_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.663ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 10.000ns
+  Destination Clock:    clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_code/state_FSM_FFd4 to Inst_code/led_out_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.YQ            Tcko                  0.470   Inst_code/state_FSM_FFd6
+                                                       Inst_code/state_FSM_FFd4
+    SLICEL.BX            net (fanout=4)     e  0.100   Inst_code/state_FSM_FFd4
+    SLICEL.CLK           Tckdi       (-Th)    -0.093   Inst_code/led_out<2>
+                                                       Inst_code/led_out_2
+    -------------------------------------------------  ---------------------------
+    Total                                      0.663ns (0.563ns logic, 0.100ns route)
+                                                       (84.9% logic, 15.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point Inst_code/Q2_1 (SLICEL.BX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.666ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               Inst_code/Q1_1 (FF)
+  Destination:          Inst_code/Q2_1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.666ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk rising at 10.000ns
+  Destination Clock:    clk rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: Inst_code/Q1_1 to Inst_code/Q2_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICEL.XQ            Tcko                  0.473   Inst_code/Q1<1>
+                                                       Inst_code/Q1_1
+    SLICEL.BX            net (fanout=2)     e  0.100   Inst_code/Q1<1>
+    SLICEL.CLK           Tckdi       (-Th)    -0.093   Inst_code/Q2<1>
+                                                       Inst_code/Q2_1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.666ns (0.566ns logic, 0.100ns route)
+                                                       (85.0% logic, 15.0% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_Inst_myclock_CLK2X_BUF = PERIOD TIMEGRP "Inst_myclock_CLK2X_BUF" TS_clkin /
+        2 HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.404ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 10.000ns
+  Low pulse: 5.000ns
+  Low pulse limit: 0.798ns (Tcl)
+  Physical resource: Inst_code/state_FSM_FFd5/CLK
+  Logical resource: Inst_code/state_FSM_FFd5/CK
+  Location pin: SLICEL.CLK
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 8.404ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.798ns (Tch)
+  Physical resource: Inst_code/state_FSM_FFd5/CLK
+  Logical resource: Inst_code/state_FSM_FFd5/CK
+  Location pin: SLICEL.CLK
+  Clock network: clk
+--------------------------------------------------------------------------------
+Slack: 8.404ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.596ns (626.566MHz) (Tcp)
+  Physical resource: Inst_code/state_FSM_FFd5/CLK
+  Logical resource: Inst_code/state_FSM_FFd5/CK
+  Location pin: SLICEL.CLK
+  Clock network: clk
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_clkin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_clkin                       |     20.000ns|      6.000ns|      8.398ns|            0|            0|            0|          276|
+| TS_Inst_myclock_CLK2X_BUF     |     10.000ns|      4.199ns|          N/A|            0|            0|          276|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clkin
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkin          |    4.199|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 276 paths, 0 nets, and 131 connections
+
+Design statistics:
+   Minimum period:   6.000ns{1}   (Maximum frequency: 166.667MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Mon Oct 10 13:49:44 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 174 MB
+
+
+

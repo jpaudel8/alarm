@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Jagannath Paudel/Documents/fpga/alarm/TB_TOP_isim_par.exe" -prj "C:/Users/Jagannath Paudel/Documents/fpga/alarm/TB_TOP_par.prj" "work.TB_TOP" 

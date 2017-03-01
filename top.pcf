@@ -1,0 +1,39 @@
+//! **************************************************************************
+// Written by: Map P.58f on Thu Dec 15 22:03:27 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "armed_led_out" LOCATE = SITE "E17" LEVEL 1;
+COMP "sensor" LOCATE = SITE "R17" LEVEL 1;
+COMP "led_out<0>" LOCATE = SITE "K14" LEVEL 1;
+COMP "led_out<1>" LOCATE = SITE "K15" LEVEL 1;
+COMP "led_out<2>" LOCATE = SITE "J15" LEVEL 1;
+COMP "keysin<0>" LOCATE = SITE "B18" LEVEL 1;
+COMP "keysin<1>" LOCATE = SITE "D18" LEVEL 1;
+COMP "keysin<2>" LOCATE = SITE "E18" LEVEL 1;
+COMP "clkin" LOCATE = SITE "B8" LEVEL 1;
+COMP "keysin<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "rstin" LOCATE = SITE "G18" LEVEL 1;
+COMP "alarm_out" LOCATE = SITE "R4" LEVEL 1;
+COMP "disarmed_led_out" LOCATE = SITE "J14" LEVEL 1;
+TIMEGRP Inst_myclock_CLK2X_BUF = BEL "Inst_code/state_FSM_FFd9" BEL
+        "Inst_code/state_FSM_FFd8" BEL "Inst_code/state_FSM_FFd7" BEL
+        "Inst_code/state_FSM_FFd6" BEL "Inst_code/state_FSM_FFd5" BEL
+        "Inst_code/state_FSM_FFd4" BEL "Inst_code/state_FSM_FFd1" BEL
+        "Inst_code/state_FSM_FFd3" BEL "Inst_code/Q3_3" BEL "Inst_code/Q3_2"
+        BEL "Inst_code/Q3_1" BEL "Inst_code/Q3_0" BEL "Inst_code/Q2_3" BEL
+        "Inst_code/Q2_2" BEL "Inst_code/Q2_1" BEL "Inst_code/Q2_0" BEL
+        "Inst_code/armed_led_out" BEL "Inst_code/alarmed" BEL "Inst_code/Q1_3"
+        BEL "Inst_code/Q1_2" BEL "Inst_code/Q1_1" BEL "Inst_code/Q1_0" BEL
+        "Inst_code/state_FSM_FFd2" BEL "Inst_code/disarmed_led_out" BEL
+        "Inst_code/led_out_2" BEL "Inst_code/led_out_1" BEL
+        "Inst_code/led_out_0" BEL "Inst_myclock/CLK2X_BUFG_INST.GCLKMUX" BEL
+        "Inst_myclock/CLK2X_BUFG_INST";
+PIN Inst_myclock/DCM_SP_INST_pins<3> = BEL "Inst_myclock/DCM_SP_INST" PINNAME
+        CLKIN;
+TIMEGRP clkin = PIN "Inst_myclock/DCM_SP_INST_pins<3>";
+TS_clkin = PERIOD TIMEGRP "clkin" 20 ns HIGH 50%;
+TS_Inst_myclock_CLK2X_BUF = PERIOD TIMEGRP "Inst_myclock_CLK2X_BUF" TS_clkin /
+        2 HIGH 50%;
+SCHEMATIC END;
+

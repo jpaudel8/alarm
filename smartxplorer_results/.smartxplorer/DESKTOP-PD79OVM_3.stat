@@ -1,0 +1,4 @@
+START:Strategy:4:ParHighEffort2
+REMOTE_PID:9108
+RUNNING:9108:10092:ParHighEffort2:map:top.ngd: -cm area -t 2 -p xc3s500e-fg320-4 -o top_map.ncd  C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun4:bsltop.pcf
+DONE:Xplorer

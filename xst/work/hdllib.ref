@@ -1,0 +1,6 @@
+AR myclock behavioral "C:/Users/Jagannath Paudel/Documents/fpga/alarm/myclock.vhd" sub00/vhpl01 1481818053
+AR code behavioral "C:/Users/Jagannath Paudel/Documents/fpga/alarm/code.vhd" sub00/vhpl03 1481818055
+EN top NULL "C:/Users/Jagannath Paudel/Documents/fpga/alarm/top.vhd" sub00/vhpl04 1481818056
+AR top behavioral "C:/Users/Jagannath Paudel/Documents/fpga/alarm/top.vhd" sub00/vhpl05 1481818057
+EN code NULL "C:/Users/Jagannath Paudel/Documents/fpga/alarm/code.vhd" sub00/vhpl02 1481818054
+EN myclock NULL "C:/Users/Jagannath Paudel/Documents/fpga/alarm/myclock.vhd" sub00/vhpl00 1481818052

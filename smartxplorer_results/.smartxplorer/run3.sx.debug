@@ -1,0 +1,37 @@
+strategySpecString = ':oc:sqmap:sq:cl:sp:sq:sp:dscm:sparea:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:spC:clcl:clbslUsers:clbslJagannath:clspPaudel:clbslDocuments:clbslfpga:clbslalarm:sp:dsp:spxc3s500e:dsfg320:ds4:sp:dsuc:spC:clcl:clbslUsers:clbslJagannath:clspPaudel:clbslDocuments:clbslfpga:clbslalarm:clbsltop.ucf:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp4:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:sptop.twx:sp:dsucf:sptop.ucf:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp3:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:sq:cm:sp:sqname:sq:cl:sp:sqParHighEffort1:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.5:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sqC:cl:bsl:bslUsers:bsl:bslJagannath:spPaudel:bsl:bslDocuments:bsl:bslfpga:bsl:bslalarm:sq:cc'
+Xilinx Environment Variables:
+
+{'XILINX': 'C:\\Xilinx\\14.5\\ISE_DS\\ISE\\'
+'PATH': 'C:\\Xilinx\\14.5\\ISE_DS\\ISE\\\\lib\\nt;C:\\Xilinx\\14.5\\ISE_DS\\ISE\\\\bin\\nt;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\PuTTY\\;C:\\Users\\Jagannath Paudel\\AppData\\Local\\Programs\\Python\\Python35-32\\;C:\\Program Files\\MATLAB\\MATLAB Production Server\\R2015a\\runtime\\win64;C:\\Program Files\\MATLAB\\MATLAB Production Server\\R2015a\\bin;C:\\Users\\Jagannath Paudel\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\;C:\\Modeltech_xe\\win32xoem;C:\\modeltech_6.4\\win32;C:\\Modeltech_5.7g\\win32;C:\\Users\\Jagannath Paudel\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Modeltech_5.7f\\win32'
+'LM_LICENSE_FILE': 'C:\\Modeltech_xe\\win32xoem\\license.dat'}
+envDict = {}
+DESKTOP-PD79OVM_2.stat:C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\.smartxplorer\.sx.keepAlive.DESKTOP-PD79OVM_2
+INFO: total number of threads running this host None
+...searching for file: parhigheffort1.xds
+Creating XDS file ... parhigheffort1.xds
+###################################
+
+      <property name = "Map:Optimization Strategy (Cover Mode)"
+               value = "Area" />
+      <property name = "Place &amp; Route:Place &amp; Route Effort Level (Overall)"
+               value = "High" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Number of Paths in Error/Verbose Report"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Type"
+               value = "Verbose Report" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Change Device Speed To"
+               value = "-4" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Paths by Endpoint"
+               value = "3" />
+      <property name = "Generate Post-Place &amp; Route Static Timing:Report Fastest Path(s) in Each Constraint"
+               value = "true" />
+###################################
+launching map with options  -cm area  -p xc3s500e-fg320-4 -o top_map.ncd  C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun3:bsltop.pcf...
+runTask: map top.ngd -cm area -p xc3s500e-fg320-4 -o top_map.ncd C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run3\top.pcf
+args = ['map', 'top.ngd', '-cm', 'area', '-p', 'xc3s500e-fg320-4', '-o', 'top_map.ncd', 'C:\\Users\\Jagannath Paudel\\Documents\\fpga\\alarm\\smartxplorer_results\\run3\\top.pcf']
+launching par with options  -ol high  -w top.ncd  C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun3:bsltop.pcf...
+runTask: par top_map.ncd -ol high -w top.ncd C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run3\top.pcf
+args = ['par', 'top_map.ncd', '-ol', 'high', '-w', 'top.ncd', 'C:\\Users\\Jagannath Paudel\\Documents\\fpga\\alarm\\smartxplorer_results\\run3\\top.pcf']
+launching trce...
+runTask: trce C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run3\top.ncd C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run3\top.pcf -xml C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run3\top.twx -v 3 -s 4 -n 3 -fastpaths -ucf top.ucf -o C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run3\top.twr
+args = ['trce', 'C:\\Users\\Jagannath Paudel\\Documents\\fpga\\alarm\\smartxplorer_results\\run3\\top.ncd', 'C:\\Users\\Jagannath Paudel\\Documents\\fpga\\alarm\\smartxplorer_results\\run3\\top.pcf', '-xml', 'C:\\Users\\Jagannath Paudel\\Documents\\fpga\\alarm\\smartxplorer_results\\run3\\top.twx', '-v', '3', '-s', '4', '-n', '3', '-fastpaths', '-ucf', 'top.ucf', '-o', 'C:\\Users\\Jagannath Paudel\\Documents\\fpga\\alarm\\smartxplorer_results\\run3\\top.twr']

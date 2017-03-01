@@ -1,0 +1,3 @@
+vhdl work "myclock.vhd"
+vhdl work "code.vhd"
+vhdl work "top.vhd"

@@ -1,0 +1,15 @@
+START:Strategy:2:MapPhysSynthesis
+REMOTE_PID:13064
+RUNNING:13064:1880:MapPhysSynthesis:map:top.ngd: -timing -ol high -xe n -register_duplication on -logic_opt on  -p xc3s500e-fg320-4 -o top_map.ncd  C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun2:bsltop.pcf
+STATUS:MapPhysSynthesis:map:Score:None:lut:None:slice_reg:27 (1%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:30.39 secs 
+STATUS:MapPhysSynthesis:map:Score:None:lut:26 (1%):slice_reg:27 (1%):slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:30.39 secs 
+STATUS:MapPhysSynthesis:map:Score:None:lut:26 (1%):slice_reg:27 (1%):slice:29 (1%):bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:30.40 secs 
+DONE:map:0
+RUNNING:13064:11464:MapPhysSynthesis:par:top_map.ncd: -ol high  -w top.ncd  C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun2:bsltop.pcf
+STATUS:MapPhysSynthesis:par:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:60.49 secs 
+STATUS:MapPhysSynthesis:par:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:2.735ns:Time:60.50 secs 
+DONE:par:0
+RUNNING:13064:1284:MapPhysSynthesis:trce:C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run2\top.ncd:C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun2:bsltop.pcf -xml C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun2:bsltop.twx -v 3 -s 4 -n 3 -fastpaths   -ucf top.ucf -o C:cl:bslUsers:bslJagannath:spPaudel:bslDocuments:bslfpga:bslalarm:bslsmartxplorer_results:bslrun2:bsltop.twr
+STATUS:MapPhysSynthesis:trce:Score:0:lut:None:slice_reg:None:slice:None:bram:None:dsp48:None:mult18x18:None:Power:None:wnsInfo:None:Time:65.58 secs 
+DONE:trce:0
+DONE:Xplorer

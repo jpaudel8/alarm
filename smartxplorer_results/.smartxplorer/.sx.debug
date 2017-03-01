@@ -1,0 +1,43 @@
+launching strategy on machine: DESKTOP-PD79OVM
+"C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\smartxplorer.exe"  --runStrategy  "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run1"   "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run1\top.ngd"  xc3s500e-fg320-4  "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run1\top_sx.log"   "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\.smartxplorer\DESKTOP-PD79OVM_0.stat"   "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\.smartxplorer\smartxplorer.env"   "None"  :oc:sqmap:sq:cl:sp:sq:sp:dstiming:sp:dsol:sphigh:sp:dsxe:spn:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:spC:clcl:clbslUsers:clbslJagannath:clspPaudel:clbslDocuments:clbslfpga:clbslalarm:sp:dsp:spxc3s500e:dsfg320:ds4:sp:dsuc:spC:clcl:clbslUsers:clbslJagannath:clspPaudel:clbslDocuments:clbslfpga:clbslalarm:clbsltop.ucf:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp4:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:sptop.twx:sp:dsucf:sptop.ucf:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp1:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapTimingExtraEffort:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.5:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sqC:cl:bsl:bslUsers:bsl:bslJagannath:spPaudel:bsl:bslDocuments:bsl:bslfpga:bsl:bslalarm:sq:cc map par
+launching strategy on machine: DESKTOP-PD79OVM
+"C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\smartxplorer.exe"  --runStrategy  "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run2"   "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run2\top.ngd"  xc3s500e-fg320-4  "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run2\top_sx.log"   "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\.smartxplorer\DESKTOP-PD79OVM_1.stat"   "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\.smartxplorer\smartxplorer.env"   "None"  :oc:sqmap:sq:cl:sp:sq:sp:dstiming:sp:dsol:sphigh:sp:dsxe:spn:sp:dsregister_duplication:spon:sp:dslogic_opt:spon:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:spC:clcl:clbslUsers:clbslJagannath:clspPaudel:clbslDocuments:clbslfpga:clbslalarm:sp:dsp:spxc3s500e:dsfg320:ds4:sp:dsuc:spC:clcl:clbslUsers:clbslJagannath:clspPaudel:clbslDocuments:clbslfpga:clbslalarm:clbsltop.ucf:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp4:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:sptop.twx:sp:dsucf:sptop.ucf:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp2:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:sq:cm:sp:sqname:sq:cl:sp:sqMapPhysSynthesis:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.5:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sqC:cl:bsl:bslUsers:bsl:bslJagannath:spPaudel:bsl:bslDocuments:bsl:bslfpga:bsl:bslalarm:sq:cc map par
+launching strategy on machine: DESKTOP-PD79OVM
+"C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\smartxplorer.exe"  --runStrategy  "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run3"   "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run3\top.ngd"  xc3s500e-fg320-4  "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run3\top_sx.log"   "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\.smartxplorer\DESKTOP-PD79OVM_2.stat"   "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\.smartxplorer\smartxplorer.env"   "None"  :oc:sqmap:sq:cl:sp:sq:sp:dscm:sparea:sp:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:spC:clcl:clbslUsers:clbslJagannath:clspPaudel:clbslDocuments:clbslfpga:clbslalarm:sp:dsp:spxc3s500e:dsfg320:ds4:sp:dsuc:spC:clcl:clbslUsers:clbslJagannath:clspPaudel:clbslDocuments:clbslfpga:clbslalarm:clbsltop.ucf:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp4:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:sptop.twx:sp:dsucf:sptop.ucf:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp3:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:sq:cm:sp:sqname:sq:cl:sp:sqParHighEffort1:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.5:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sqC:cl:bsl:bslUsers:bsl:bslJagannath:spPaudel:bsl:bslDocuments:bsl:bslfpga:bsl:bslalarm:sq:cc map par
+launching strategy on machine: DESKTOP-PD79OVM
+"C:\Xilinx\14.5\ISE_DS\ISE\bin\nt\smartxplorer.exe"  --runStrategy  "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run4"   "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run4\top.ngd"  xc3s500e-fg320-4  "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\run4\top_sx.log"   "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\.smartxplorer\DESKTOP-PD79OVM_3.stat"   "C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\.smartxplorer\smartxplorer.env"   "None"  :oc:sqmap:sq:cl:sp:sq:sp:dscm:sparea:sp:dst:sp2:sq:cm:sp:sqpower:sq:cl:sp:sqoff:sq:cm:sp:sqbitgen:sq:cl:sp:sqon:sq:cm:sp:sqsynplify:sq:cl:sp:sq:sq:cm:sp:sqngdbuild:sq:cl:sp:sq:dssd:spC:clcl:clbslUsers:clbslJagannath:clspPaudel:clbslDocuments:clbslfpga:clbslalarm:sp:dsp:spxc3s500e:dsfg320:ds4:sp:dsuc:spC:clcl:clbslUsers:clbslJagannath:clspPaudel:clbslDocuments:clbslfpga:clbslalarm:clbsltop.ucf:sq:cm:sp:sqtrce:sq:cl:sp:sq:dsv:sp3:sp:dss:sp4:sp:dsn:sp3:sp:dsfastpaths:sp:dsxml:sptop.twx:sp:dsucf:sptop.ucf:sq:cm:sp:sqmax_score:sq:cl:spNone:cm:sp:sqindex:sq:cl:sp4:cm:sp:sqpar:sq:cl:sp:sq:sp:dsol:sphigh:sp:dst:sp2:sq:cm:sp:sqname:sq:cl:sp:sqParHighEffort2:sq:cm:sp:sqxst:sq:cl:sp:sq:sq:cm:sp:sqarea:sq:cl:sp:os:sqlut:sq:cm:sp:sqslice_reg:sq:cs:cm:sp:sqversion:sq:cl:sp:sq14.5:sq:cm:sp:sqenv:sq:cl:sp:sq:oc:cc:sq:cm:sp:sqsxLaunchDir:sq:cl:sp:sqC:cl:bsl:bslUsers:bsl:bslJagannath:spPaudel:bsl:bslDocuments:bsl:bslfpga:bsl:bslalarm:sq:cc map par
+DESKTOP-PD79OVM_0 DESKTOP-PD79OVM_0.stat 1476086716.41 1476086715.92 1476086716.57
+DESKTOP-PD79OVM_1 waiting on C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\.smartxplorer\.sx.keepAlive.DESKTOP-PD79OVM_1
+DESKTOP-PD79OVM_2 waiting on C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\.smartxplorer\.sx.keepAlive.DESKTOP-PD79OVM_2
+DESKTOP-PD79OVM_3 waiting on C:\Users\Jagannath Paudel\Documents\fpga\alarm\smartxplorer_results\.smartxplorer\.sx.keepAlive.DESKTOP-PD79OVM_3
+DESKTOP-PD79OVM_0 no new lines in stat file
+DESKTOP-PD79OVM_1 DESKTOP-PD79OVM_1.stat 1476086716.6 1476086716.6 1476086730.99
+DESKTOP-PD79OVM_2 DESKTOP-PD79OVM_2.stat 1476086716.73 1476086716.6 1476086731.02
+DESKTOP-PD79OVM_3 DESKTOP-PD79OVM_3.stat 1476086716.86 1476086716.62 1476086731.04
+DESKTOP-PD79OVM_0 no new lines in stat file
+DESKTOP-PD79OVM_1 no new lines in stat file
+DESKTOP-PD79OVM_2 no new lines in stat file
+DESKTOP-PD79OVM_3 no new lines in stat file
+DESKTOP-PD79OVM_0 DESKTOP-PD79OVM_0.stat 1476086746.42 1476086716.58 1476086761.05
+DESKTOP-PD79OVM_1 DESKTOP-PD79OVM_1.stat 1476086746.6 1476086731.02 1476086761.08
+DESKTOP-PD79OVM_2 DESKTOP-PD79OVM_2.stat 1476086746.73 1476086731.04 1476086761.1
+DESKTOP-PD79OVM_3 DESKTOP-PD79OVM_3.stat 1476086746.88 1476086731.09 1476086761.12
+New best strategy: MapTimingExtraEffort score: 0
+
+INFO: Timing Met... Stopping remaining jobs
+taskkill /F /pid 9412 /T
+taskkill /F /pid 9616 /T
+taskkill /F /pid 9616 /T
+taskkill /F /pid 11464 /T
+taskkill /F /pid 13064 /T
+taskkill /F /pid 13064 /T
+taskkill /F /pid 12404 /T
+taskkill /F /pid 764 /T
+taskkill /F /pid 764 /T
+taskkill /F /pid 10092 /T
+taskkill /F /pid 9108 /T
+taskkill /F /pid 9108 /T
+DESKTOP-PD79OVM_0 is Idle
+DESKTOP-PD79OVM_1 is Idle
+DESKTOP-PD79OVM_2 is Idle
+DESKTOP-PD79OVM_3 is Idle

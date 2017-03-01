@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Mon Oct 10 21:11:28 2016
+# Process ID: 11980
+# Log file: C:/Users/Jagannath Paudel/Documents/fpga/alarm/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Jagannath Paudel/Documents/fpga/alarm/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Jagannath Paudel/Documents/fpga/alarm/pa.fromNetlist.tcl}

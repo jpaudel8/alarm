@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\Jagannath Paudel\Documents\fpga\alarm\impact.xsl
+OUTFILE=C:\Users\Jagannath Paudel\Documents\fpga\alarm\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Users\Jagannath Paudel\Documents\fpga\alarm
+LICENSE=iMPACT
+USER_INFO=iMPACT
